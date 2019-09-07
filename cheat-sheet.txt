@@ -97,4 +97,8 @@ git push git-playground branch-to-play
 # To merge a branch to master branch
 # Merge from master to current branch first to keep master branch clean
 git merge master
-
+#Do it on the development branch 
+git checkout master
+#switch to master branch
+git merge branch-to-play
+git push git-playground master
