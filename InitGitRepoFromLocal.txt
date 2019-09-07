@@ -1,0 +1,14 @@
+1 - Initialize a git repo:
+git init
+
+2 - Add all the files in the directory:
+git add .
+
+3 - Commit the changes:
+git commit -m "initial commit"
+
+4 - Create a git remote for your remote repository:
+git remote add origin remote-url
+
+5 - Finally, push the changes in your local repository to GitHub
+git push origin master
