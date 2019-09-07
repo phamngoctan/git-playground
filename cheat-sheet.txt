@@ -66,7 +66,13 @@ git checkout master
 git switch branch-to-play
 
 # To delete a branch
-git branch delete new-feature
+git branch --delete new-feature
+git branch -d new-feature
+# above command is the same
+git branch -D new-feature
+#-D means --delete --force
+# it equals the below command
+git branch -d -f new-feature
 
 # To push a branch to remote
 git push git-playground branch-to-play
@@ -83,3 +89,12 @@ To https://github.com/phamngoctan/git-playground
 
 # Need help
 git branch --help
+
+# Commit changes again
+# To push code to remote
+git push git-playground branch-to-play
+
+# To merge a branch to master branch
+# Merge from master to current branch first to keep master branch clean
+git merge master
+
