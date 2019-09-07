@@ -8,7 +8,7 @@ git add .
 git commit -m "initial commit"
 
 4 - Create a git remote for your remote repository:
-git remote add origin remote-url
+git remote add origin https://github.com/phamngoctan/git-playground.git
 
 5 - Finally, push the changes in your local repository to GitHub
-git push origin master
+git push -u origin master
