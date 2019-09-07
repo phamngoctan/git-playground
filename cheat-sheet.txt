@@ -1,7 +1,24 @@
+##### Do all in git bash
+### Tasks that you have to do manually to create a repository
+# Go to Github.com(assuming you are signed-in)
+# Create a repository and name it accordingly
+# Copy the git link
+#          example: https://github.com/phamngoctan/git-playground
+
 git config --global user.name "Tan Pham"
 git config --global user.email "your-email@gmail.com"
 
+# To create new file (README.md) and add a content to it
 echo "# git-playground" >> README.md
+
+# To set the url for the local point to the remote repository
+git remote add set-url https://github.com/phamngoctan/git-playground
+git remote add git-playground https://github.com/phamngoctan/git-playground
+#          add action
+#              Name of the remote
+#                      URL of the github repository   
+# To remove the remote url
+git remote delete set-url
 
 git diff
 git commit -m 'my notes' -- cheat-sheet.txt
