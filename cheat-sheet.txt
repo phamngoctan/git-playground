@@ -2,3 +2,12 @@ git config --global user.name "Tan Pham"
 git config --global user.email "your-email@gmail.com"
 
 echo "# git-playground" >> README.md
+
+git diff
+git commit -m 'my notes' -- cheat-sheet.txt
+
+git add README.md
+git commit -m "add readme file" README.md
+
+#To see the current remote URL
+git remote -v
