@@ -26,5 +26,60 @@ git commit -m 'my notes' -- cheat-sheet.txt
 git add README.md
 git commit -m "add readme file" README.md
 
-#To see the current remote URL
+# To see the current remote URL
 git remote -v
+
+# To push to remote repository
+git push git-playground master
+#        push to this remote uri name
+#                       push to this branch
+
+# Some log after committing
+# git push git-playground master
+#Enumerating objects: 5, done.
+#Counting objects: 100% (5/5), done.
+#Delta compression using up to 4 threads
+#Compressing objects: 100% (3/3), done.
+#Writing objects: 100% (3/3), 712 bytes | 712.00 KiB/s, done.
+#Total 3 (delta 1), reused 0 (delta 0)
+#remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+#To https://github.com/phamngoctan/git-playground
+#   5e30279..25235f5  master -> master
+
+# Check current branch name
+git branch
+
+# Before creating a new branch, pull the changes from upstream
+git pull git-playground master
+
+#Logs
+#From https://github.com/phamngoctan/git-playground
+# * branch            master     -> FETCH_HEAD
+#Already up to date.
+
+# To create a branch
+git checkout -b branch-to-play
+git checkout -b new-feature
+
+# To switch a branch (without -b option)
+git checkout master 
+git switch branch-to-play
+
+# To delete a branch
+git branch delete new-feature
+
+# To push a branch to remote
+git push git-playground branch-to-play
+#        remote url name
+#                       branch name to be pushed
+#Logs
+#Total 0 (delta 0), reused 0 (delta 0)
+#remote:
+remote: Create a pull request for 'branch-to-play' on GitHub by visiting:
+remote:      https://github.com/phamngoctan/git-playground/pull/new/branch-to-play
+remote:
+To https://github.com/phamngoctan/git-playground
+ * [new branch]      branch-to-play -> branch-to-play
+
+# Need help
+git branch --help
