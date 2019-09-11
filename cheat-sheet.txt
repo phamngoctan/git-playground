@@ -102,3 +102,18 @@ git checkout master
 #switch to master branch
 git merge branch-to-play
 git push git-playground master
+
+
+#Git pull from a specific version
+git pull git-playground master
+#        remote name
+#                       branch-name
+
+#Git check changed files
+git status
+#OR
+git diff --name-only
+
+# show only conflict file
+git diff --name-only --diff-filter=U
+
