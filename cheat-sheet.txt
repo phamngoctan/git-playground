@@ -8,6 +8,11 @@
 git config --global user.name "Tan Pham"
 git config --global user.email "your-email@gmail.com"
 
+# To set the user.name and email of a specific repository
+cd to the repository folder
+git config user.name "phamngoctan"
+git config user.email "pnt.dtqn1991@gmail.com"
+
 # To create new file (README.md) and add a content to it
 echo "# git-playground" >> README.md
 
@@ -93,7 +98,6 @@ git branch --help
 # Commit changes again
 # To push code to remote
 git push git-playground branch-to-play
-
 # To merge a branch to master branch
 # Merge from master to current branch first to keep master branch clean
 git merge master
@@ -118,4 +122,4 @@ git diff --name-only
 git diff --name-only --diff-filter=U
 
 
-#Add more lines
+#
