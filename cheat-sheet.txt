@@ -12,6 +12,10 @@ git config --global user.email "your-email@gmail.com"
 cd to the repository folder
 git config user.name "phamngoctan"
 git config user.email "pnt.dtqn1991@gmail.com"
+git config user.name
+git config user.email
+# Show current user.name in the config
+# Show the current user.email in the config log
 
 # To create new file (README.md) and add a content to it
 echo "# git-playground" >> README.md
