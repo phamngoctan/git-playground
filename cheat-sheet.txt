@@ -126,4 +126,8 @@ git diff --name-only
 git diff --name-only --diff-filter=U
 
 
-#
+# Check the changes between branches
+git diff branch_name other_name
+
+# Check the changes between tags
+git log tag1 tag2

@@ -7,3 +7,9 @@ Basic knowledge of git bash for daily work such as:
 - Create a new branch
 - Switch between branches
 - Merge branch strategy
+- Difference between branches, tag
+
+```bash
+git diff branch's_name master
+git log tag1 tag2
+```
